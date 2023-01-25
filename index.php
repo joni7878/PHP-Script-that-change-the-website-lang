@@ -1,11 +1,11 @@
 <?php
-$ip = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['HTTP_CF_CONNECTING_IP'];
 $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
 // $ip = $details->ip; // 
 $country = $details->country;
 if ($country == "IL") {
 header("Location: ./he");
-} elseif ($country == "us") {
+} elseif ($country == "US") {
 header("Location: ./en");
 } elseif ($country == "RU") {
 header("Location: ./ru");
