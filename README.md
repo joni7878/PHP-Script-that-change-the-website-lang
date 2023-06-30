@@ -1,4 +1,5 @@
-# Change The Website Language!!
+# -- The SCRIPT Is Not WORKING --
+## Change The Website Language!!
 ### Useful script that change the language directly 
 #### The script written on php
 
